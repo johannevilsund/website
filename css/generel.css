@@ -29,7 +29,7 @@ h1 {
   font-family: "Alfa Slab One", serif;
   color: transparent; /* Gør tekstens fyld gennemsigtig */
   -webkit-text-stroke: 0.1px white; /* Gør outline hvid og sætter tykkelse */
-  font-size: 48px; /* Juster størrelsen efter behov */
+  font-size: 120px; /* Juster størrelsen efter behov */
 }
 h2 {
   font-family: "Alfa Slab One", serif;
@@ -37,7 +37,5 @@ h2 {
   -webkit-text-stroke: 0.1px white; /* Gør outline hvid og sætter tykkelse */
   font-size: 48px; /* Juster størrelsen efter behov */
 }
-
-/* meny */
 
 /* footer */
