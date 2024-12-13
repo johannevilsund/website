@@ -22,3 +22,38 @@
   grid-row: 1;
   aspect-ratio: 1;
 }
+.img4 {
+  grid-column: 3 / 5;
+  grid-row: 2;
+  aspect-ratio: 2/1;
+}
+.img5 {
+  grid-column: 1;
+  grid-row: 3;
+  aspect-ratio: 1;
+}
+.img6 {
+  aspect-ratio: 3/1;
+  grid-column: span 3;
+  grid-row: 3;
+}
+.img7 {
+  grid-column: span 2;
+  grid-row: 4;
+  aspect-ratio: 2/1;
+}
+.img8 {
+  grid-column: span 2;
+  grid-row: 4;
+  aspect-ratio: 2/1;
+}
+.img9 {
+  aspect-ratio: 4/1;
+  grid-column: span 4;
+  grid-row: 5;
+}
+
+.grid_4col {
+  margin-left: 100px;
+  margin-right: 100px;
+}
