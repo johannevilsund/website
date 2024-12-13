@@ -16,8 +16,27 @@ main {
   margin: 0 auto;
 }
 /* farver */
+body {
+  background-color: black;
+}
 
 /* skrft og skrifttyper */
+h3 {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+h1 {
+  font-family: "Alfa Slab One", serif;
+  color: transparent; /* Gør tekstens fyld gennemsigtig */
+  -webkit-text-stroke: 0.1px white; /* Gør outline hvid og sætter tykkelse */
+  font-size: 48px; /* Juster størrelsen efter behov */
+}
+h2 {
+  font-family: "Alfa Slab One", serif;
+  color: transparent; /* Gør tekstens fyld gennemsigtig */
+  -webkit-text-stroke: 0.1px white; /* Gør outline hvid og sætter tykkelse */
+  font-size: 48px; /* Juster størrelsen efter behov */
+}
 
 /* meny */
 
