@@ -1,5 +1,20 @@
-/* resset */
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
 /* farver */
 
 /* skrft og skrifttyper */
