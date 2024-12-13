@@ -1,0 +1,137 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
+}
+
+/* Video Baggrund */
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(30%);
+}
+
+/* Indhold */
+.content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+/* Overskrift - Mobile First */
+header h1 {
+  font-family: "Inter", sans-serif;
+  font-size: 9rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+  line-height: 1; /* Fjern linjeafstand */
+  margin-bottom: 0; /* Fjern ekstra margin */
+}
+
+.tiki {
+  display: block;
+  margin-bottom: -40px; /* Træk "MEDIA" tættere på "TIKI" */
+  text-align: left;
+  letter-spacing: -12px; /* Gør bogstaverne tættere */
+}
+
+.media {
+  display: block;
+  margin-left: 15%; /* Forskydning af "MEDIA" */
+  text-align: right;
+  letter-spacing: -12px; /* Gør bogstaverne tættere */
+}
+/* Undertekst */
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: right;
+}
+
+/* Navigation */
+nav ul {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style: none;
+  font-size: 5vw;
+  text-transform: uppercase;
+  margin-top: auto;
+}
+
+nav ul li {
+  margin: 5px 0;
+  opacity: 0.7;
+  font-weight: bold;
+}
+
+nav ul li:hover {
+  opacity: 1;
+}
+
+nav ul li a {
+  text-decoration: none; /* Fjern understregning */
+  color: #fff; /* Hvid tekstfarve */
+  opacity: 0.7;
+  font-weight: bold;
+  transition: opacity 0.3s ease;
+}
+
+nav ul li a:hover {
+  opacity: 1; /* Fuldt synlig på hover */
+}
+
+/* Desktop Tilpasning */
+@media (min-width: 769px) {
+  header h1 {
+    font-size: 17.5rem;
+    text-align: center;
+    line-height: 1;
+  }
+
+  .tiki,
+  .media {
+    display: inline-block;
+    margin-left: 0; /* Fjern forskydning på desktop */
+  }
+
+  .subtitle {
+    font-size: 4.7rem;
+    text-align: right;
+  }
+
+  nav ul {
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+  }
+}
