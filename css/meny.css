@@ -16,6 +16,7 @@
   font-family: "Inter", sans-serif;
   color: gray;
   font-size: small;
+  font-weight: bold;
   text-transform: uppercase;
   font-weight: 600;
 }
@@ -41,6 +42,7 @@ header {
   padding: 10px 20px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 5%;
 }
 .wrapper {
   max-width: 1200px; /* Begræns wrapperens bredde */
@@ -100,7 +102,7 @@ nav {
 .burger .line {
   width: 100%;
   height: 2px;
-  background-color: white;
+  background-color: gray;
   margin-bottom: 5px;
   transition: 0.2s linear;
   align-self: end;
