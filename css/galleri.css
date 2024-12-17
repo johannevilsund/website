@@ -2,8 +2,26 @@
 .font {
   font-family: "Inter", sans-serif;
 }
+p {
+  color: white;
+  margin-left: 15px;
+  font-family: "Abel";
+  font-weight: 50;
+  text-align: justify;
+  margin-top: 15px;
+  margin-right: 15px;
+}
+
+.tekst p {
+  margin-bottom: 20px;
+}
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 h1 {
-  margin-left: 2rem;
+  margin-left: 9rem;
 }
 .grid_4col {
   display: grid;
@@ -56,9 +74,17 @@ h1 {
   grid-row: 5;
 }
 
-.grid_4col {
+.grid_4col,
+.grid_3col {
   margin-left: 100px;
   margin-right: 100px;
+  object-fit: cover;
+}
+
+.grid_3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
 }
 
 /* Mobil version */
@@ -67,7 +93,9 @@ h1 {
     margin-bottom: 5%;
     margin-left: 2%;
   }
-
+  .grid_3col {
+    display: none;
+  }
   .grid_4col {
     display: grid;
     grid-template-columns: 1fr 1fr; /* 2 lige store kolonner */
@@ -110,4 +138,16 @@ h1 {
     height: 100%;
     object-fit: cover;
   }
+  .hero {
+    display: none;
+  }
+  .footer {
+    top: 250rem;
+  }
+}
+
+.hero dotlottie-player {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
