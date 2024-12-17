@@ -110,6 +110,24 @@ nav ul li a:hover {
   opacity: 1; /* Fuldt synlig på hover */
 }
 
+/* Smooth overgang for farve */
+.subtitle,
+.tiki,
+.media {
+  transition: color 0.6s ease; /* Blød og langsommere overgang (0.6 sekunder) */
+}
+
+/* Hover-effekt for undertekst */
+.subtitle.hovered {
+  color: #fff; /* Undertekst bliver helt hvid */
+}
+
+/* Gør TIKI MEDIA halv-gennemsigtig */
+.tiki.dimmed,
+.media.dimmed {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 /* Desktop Tilpasning */
 @media (min-width: 769px) {
   header h1 {
