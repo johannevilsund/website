@@ -2,10 +2,15 @@ hr {
   color: white;
 }
 
-.logo {
+footer {
+  margin-top: 150px;
+}
+
+.logotv {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 10px;
+  padding: 15px 30px 15px 30px;
 }
 
 .dr {
@@ -15,7 +20,7 @@ hr {
 
 .tv2 {
   width: 75px;
-  height: 30px;
+  height: 10px 30px;
   margin-top: 10px;
   margin-left: 10px;
 }
@@ -35,27 +40,27 @@ hr {
 
 .some img {
   margin: 10px;
-  margin-top: 30px;
+  margin-top: 10px 30px;
   width: 50px;
   height: 50px;
 }
 
 .some {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   margin-bottom: 50px;
+  margin-top: 20px;
 }
 
 .kontakt {
   margin-top: 50px;
 }
-/* 
-@media screen and(min-width:800px) {
-  .logo {
+
+@media (min-width: 800px) {
+  .logotv {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
     gap: 10px;
-    align-content: center;
   }
   .dr2 {
     width: 100px;
@@ -66,8 +71,8 @@ hr {
   .tv22 {
     display: block;
     width: 75px;
-    height: 30px;
+    height: 10px 30px;
     margin-top: 10px;
     margin-left: 10px;
   }
-} */
+}
