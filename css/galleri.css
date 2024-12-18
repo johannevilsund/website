@@ -1,7 +1,4 @@
-/* font */
-.font {
-  font-family: "Inter", sans-serif;
-}
+/* styling af tekst til footer */
 p {
   color: white;
   margin-left: 15px;
@@ -15,19 +12,38 @@ p {
 .tekst p {
   margin-bottom: 20px;
 }
+
+/* generel style af billeder */
 img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
+/* styling af overskrift */
 h1 {
-  margin-left: 9rem;
+  margin-left: 10rem;
 }
+/* styling af grid til galleriet og billederne til alleriet */
 .grid_4col {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 1%;
 }
+
+.grid_4col,
+.grid_3col {
+  margin-left: 100px;
+  margin-right: 100px;
+  object-fit: cover;
+}
+
+.grid_3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1%;
+}
+
+/* billederne til galleriet */
 .img1 {
   grid-column: span 2;
   grid-row: span 2;
@@ -74,25 +90,34 @@ h1 {
   grid-row: 5;
 }
 
-.grid_4col,
-.grid_3col {
-  margin-left: 100px;
-  margin-right: 100px;
-  object-fit: cover;
+/* styling af footer banner */
+.grid_5col {
+  /* display: grid;
+  grid-template-columns: 1fr 1fr 1fr; */
+  margin-top: -13rem;
+  margin-bottom: -15rem;
 }
 
-.grid_3col {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 1%;
+.lottie-banner {
+  width: 100%;
+  /* max-height: 100px; */
+  object-fit: cover;
+}
+.lottie-banner {
+  /* aspect-ratio: 16 / 3; */
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Mobil version */
 @media (max-width: 800px) {
+  /* styling af ovrskrift */
   h1 {
     margin-bottom: 5%;
     margin-left: 2%;
   }
+
+  /* styling af grid til galleriet */
   .grid_3col {
     display: none;
   }
@@ -138,16 +163,10 @@ h1 {
     height: 100%;
     object-fit: cover;
   }
-  .hero {
-    display: none;
-  }
-  .footer {
-    top: 250rem;
-  }
-}
 
-.hero dotlottie-player {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  /* styling af footer banner */
+  .grid_5col {
+    margin-top: 15rem;
+    margin-bottom: -8rem;
+  }
 }
